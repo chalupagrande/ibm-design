@@ -4,7 +4,8 @@
   <title>AustinTexas.gov</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-
+  <!-- Google -->
+   <script src="https://maps.googleapis.com/maps/api/js"></script>
   <!-- FONTS -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 </head>
@@ -12,34 +13,32 @@
 
 <div class="site-wrapper">
 
-     <div class="site-wrapper-inner">
+   <div class="site-wrapper-inner">
 
-       <div class="cover-container">
+     <div class="cover-container">
 
-         <div class="masthead clearfix navbar-fixed-bottom">
-           <div class="inner">
-             <nav>
-               <ul class="nav masthead-nav">
-                 <li class="active"><a href="#/" alt="Home"><i class="glyphicon glyphicon-home"></i></a></li><!--
-                 --><li><a href="#" alt="Music"><i class="glyphicon glyphicon-cd"></i></a></li><!--
-                 --><li><a href="#" alt="Movies"><i class="glyphicon glyphicon-film"></i></a></li><!--
-                 --><li><a href="#" alt="Outdoors"><i class="glyphicon glyphicon-tree-conifer"></i></a></li><!--
-                 --><li><a href="#/map" alt="Outdoors"><i class="glyphicon glyphicon-map-marker"></i></a></li>
-
-               </ul>
-             </nav>
-           </div>
+       <div class="masthead clearfix navbar-fixed-bottom">
+         <div class="inner">
+           <nav>
+             <ul class="nav masthead-nav">
+               <li><a href="index.html" alt="Home"><i class="glyphicon glyphicon-home"></i></a></li><!--
+               --><li><a href="#" alt="Music"><i class="glyphicon glyphicon-cd"></i></a></li><!--
+               --><li><a href="#" alt="Movies"><i class="glyphicon glyphicon-film"></i></a></li><!--
+               --><li><a href="#" alt="Outdoors"><i class="glyphicon glyphicon-tree-conifer"></i></a></li><!--
+               --><li><a href="#/map" alt="Outdoors"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+             </ul>
+           </nav>
          </div>
+       </div><!-- end masthead -->
 
-         <div id="app"></div>
+       <div id="app"></div>
 
-         </div>
+     </div><!-- end cover container -->
 
-       </div>
+   </div><!-- end cover container -->
 
-     </div>
+ </div><!-- end Site wrapper -->
 
-   </div>
 
 
 
@@ -48,6 +47,7 @@
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../bower_components/mithril/mithril.min.js"></script>
 
+<script src="js/ext.js"></script>
 <script src="js/components.js"></script>
 
 <script>
