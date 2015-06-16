@@ -124,7 +124,7 @@ body {
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
@@ -146,6 +146,7 @@ body {
 @media (max-width: 365px) {
   .masthead-nav > li > a {
     padding: 10px !important;
+    font-size: 20px
   }
   .masthead-nav > li {
     margin-left: 10px !important;

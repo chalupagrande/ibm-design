@@ -22,9 +22,8 @@
            <nav>
              <ul class="nav masthead-nav">
                <li><a href="index.html" alt="Home"><i class="glyphicon glyphicon-home"></i></a></li><!--
-               --><li><a href="#" alt="Music"><i class="glyphicon glyphicon-cd"></i></a></li><!--
-               --><li><a href="#" alt="Movies"><i class="glyphicon glyphicon-film"></i></a></li><!--
-               --><li><a href="#" alt="Outdoors"><i class="glyphicon glyphicon-tree-conifer"></i></a></li><!--
+               --><li><a href="#/music" alt="Music"><i class="glyphicon glyphicon-cd"></i></a></li><!--
+               --><li><a href="#/outdoors" alt="Outdoors"><i class="glyphicon glyphicon-tree-conifer"></i></a></li><!--
                --><li><a href="#/map" alt="Outdoors"><i class="glyphicon glyphicon-map-marker"></i></a></li>
              </ul>
            </nav>
@@ -54,7 +53,9 @@
   m.route.mode = "hash";
   m.route(document.getElementById('app'), "/", {
     "/": home,
-    "/map": map
+    "/map": map,
+    "/music": music,
+    "/outdoors" : outdoors
 });
 </script>
 </body>
