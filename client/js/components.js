@@ -79,6 +79,7 @@
 
   function mountMap (ctrl, elem, hasInitialized, context) {
     if (!hasInitialized) {
+      $(elem).height($(window).height())
       var mapCanvas = document.getElementById('map');
       var mapOptions = {
         center: ctrl.center,
@@ -88,7 +89,6 @@
 
       var map = new google.maps.Map(mapCanvas, mapOptions)
       ctrl.addMarkers(map);
-      $(elem).height($(window).height())
     }
   }// END MOUNT CHART
 
