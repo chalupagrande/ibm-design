@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AustinTexas.gov</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <!-- FONTS -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="site-wrapper">
+
+     <div class="site-wrapper-inner">
+
+       <div class="cover-container">
+
+         <div class="masthead clearfix navbar-fixed-bottom">
+           <div class="inner">
+             <nav>
+               <ul class="nav masthead-nav">
+                 <li class="active"><a href="index.html" alt="Home"><i class="glyphicon glyphicon-home"></i></a></li><!--
+                 --><li><a href="#" alt="Music"><i class="glyphicon glyphicon-cd"></i></a></li><!--
+                 --><li><a href="#" alt="Movies"><i class="glyphicon glyphicon-film"></i></a></li><!--
+                 --><li><a href="#" alt="Outdoors"><i class="glyphicon glyphicon-tree-conifer"></i></a></li><!--
+                 --><li><a href="map.html" alt="Outdoors"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+
+               </ul>
+             </nav>
+           </div>
+         </div>
+
+         <div class="inner cover trans-bg">
+           <h2 class="cover-heading thin marginless">Welcome to</h2>
+           <h1 class="cover-heading thin big">AUSTIN TEXAS</h1>
+
+         </div>
+
+         <div class="mastfoot">
+           <div class="inner">
+             <p></p>
+           </div>
+         </div>
+
+       </div>
+
+     </div>
+
+   </div>
+
+
+
+<!-- Javascript -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script>
+  m.route.mode = "hash";
+  m.route(document.getElementById('app'), "/", {
+    "/": home,
+    "/map": map
+});
+</script>
+</body>
+</html>

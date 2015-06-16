@@ -1,0 +1,20 @@
+{
+  "name": "IBM Project",
+  "version": "0.0.0",
+  "authors": [
+    "Jamie Skinner <skinner520@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "mithril": "~0.2.0"
+  }
+}
