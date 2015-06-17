@@ -2,6 +2,13 @@
  * Globals
  */
 
+@media screen and (-webkit-device-pixel-ratio: 2) {
+    body {font-size: 105%}
+}
+@media screen and (-webkit-device-pixel-ratio: 3) {
+    body {font-size: 130%}
+}
+
 body,html{
   height:100%;
 }
@@ -10,20 +17,37 @@ body,html{
   height:100%;
   position:absolute;
 }
-.music{
+.music, .outdoors{
+  background-color: white;
   margin-bottom:70px;
 }
-.band{
+.title-layer{
+  display:block;
   background-color:white;
+  color:black;
+  position:fixed;
+  text-align: left;
+  text-shadow:none;
+  top:0;
+  width:100%;
+}
+.first-entry{
+  margin-top:77px;
+}
+.entry{
   color:black;
   text-shadow:none;
   padding:3px;
+  text-align: left;
 }
-.band > img{
+.entry > img{
   width:50%;
-  float:left;
+  padding:3px;
 }
-.band::after{
+.entry > p > b{
+  text-decoration: underline;
+}
+.entry::after{
   visibility: hidden;
   display: block;
   font-size: 0;
@@ -44,6 +68,15 @@ body,html{
 
 .thin{
   font-family: 'Open Sans Condensed', sans-serif;
+}
+.bold{
+  font-weight:bold;
+}
+.right{
+  float:right;
+}
+.left{
+  float:left;
 }
 .big{
   font-weight: 700;
@@ -172,7 +205,7 @@ body {
 
 
 
-@media (max-width: 365px) {
+@media (max-width: 359px) {
   .masthead-nav > li > a {
     padding: 10px !important;
     font-size: 20px
@@ -245,6 +278,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 100%;
   }
 }
