@@ -1,12 +1,44 @@
 /*
  * Globals
  */
+
+body,html{
+  height:100%;
+}
 #app{
   width:100%;
   height:100%;
+  position:absolute;
+}
+.music{
+  margin-bottom:70px;
+}
+.band{
+  background-color:white;
+  color:black;
+  text-shadow:none;
+  padding:3px;
+}
+.band > img{
+  width:50%;
+  float:left;
+}
+.band::after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 
-
+.home{
+  width:100%;
+  height:100%;
+  background-image: url("../images/skyline.jpg");
+  background-position:center center;
+  background-repeat: no-repeat;
+}
 
 /* Typography */
 
@@ -70,9 +102,6 @@ html,
 body {
   height: 100%;
   background-color: black !important;
-  background-image: url("../images/skyline.jpg");
-  background-position:center center;
-  background-repeat: no-repeat;
 }
 body {
   color: #fff !important;

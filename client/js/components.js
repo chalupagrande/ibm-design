@@ -11,9 +11,11 @@
   }
 
   home.view = function (ctrl) {
-    return m('.inner .cover .trans-bg', [
-      m('h2', { class: "cover-heading thin marginless"},"Welcome To"),
-      m('h1',{ class: "cover-heading thin big"}, "AUSTIN TEXAS")
+    return m('.home',[
+      m('.inner .cover .trans-bg', [
+        m('h2', { class: "cover-heading thin marginless"},"Welcome To"),
+        m('h1',{ class: "cover-heading thin big"}, "AUSTIN TEXAS")
+      ])
     ])
   }
 
@@ -108,15 +110,52 @@
 
   window.music = {}
 
+  music.stubData = [
+  {
+    url: "http://www.austinchronicle.com/imager/b/filmreview/1641992/f2c5/front_slide_img2-956x400.jpg",
+    description: "Canadian folk-pop ruralists return with sixth LP, A Forest of Arms.",
+    time: "Tue., June 16, 7pm",
+    location: "The Parish"
+  },
+  {
+    url: "http://i.ytimg.com/vi/3PmXpT6ejE4/maxresdefault.jpg",
+    description: "Cambridge folk marrieds Deb Talan and Steve Tannen cry out fifth LP Sirens.",
+    time: "Tue., July 5th, 5pm",
+    location: "B.D. Riley's Irish Pub"
+  },
+  {
+    url: "http://i.ytimg.com/vi/8Ffx9MoOr-c/hqdefault.jpg",
+    description: "Native austin band playing their 3rd LP",
+    time: "Tue., July 11, 7pm",
+    location: "Bat Bar"
+  }
+
+  ]
+
+  music.model = function(img, desc, time, loc){
+    this.img = m.prop(img)
+    this.description = m.prop(desc)
+    this.time = m.prop(time)
+    this.location = m.prop(loc)
+  }
+
   music.controller = function(){
     var ctrl = this;
+
   }
 
   music.view = function(){
-   return m('.inner .cover .trans-bg', [
-      m('h2', { class: "cover-heading thin marginless"},"Welcome To"),
-      m('h1',{ class: "cover-heading thin big"}, "The Music Page")
-    ])
+   return m('.music',[
+       m('h3.title-layer','Music'),
+         music.stubData.map(function(song){
+           return [
+             m('.band',[
+               m("img[src="+song.url+"]"),
+               m("p", "Description: "+song.description)
+             ])
+           ]
+         })
+       ])
   }
 
   /*******************
